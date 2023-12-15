@@ -26,6 +26,7 @@
 		AAAE8024294793AB0099DABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAE8023294793AB0099DABC /* Assets.xcassets */; };
 		AAAE8027294793AB0099DABC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAE8026294793AB0099DABC /* Preview Assets.xcassets */; };
 		AAAE8031294795050099DABC /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AAAE8030294795050099DABC /* SampleCode.xcconfig */; };
+		BF939F902B2BD16B0034CB36 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = BF939F8F2B2BD16B0034CB36 /* Collections */; };
 		C768FBAF294B7F8300798D32 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C768FBAE294B7F8300798D32 /* ScrumStore.swift */; };
 		C76970A02948F3A4002748F5 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C769709F2948F3A4002748F5 /* ScrumsView.swift */; };
 		C76970A22948F9CA002748F5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76970A12948F9CA002748F5 /* DetailView.swift */; };
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF939F902B2BD16B0034CB36 /* Collections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +184,9 @@
 			dependencies = (
 			);
 			name = Scrumdinger;
+			packageProductDependencies = (
+				BF939F8F2B2BD16B0034CB36 /* Collections */,
+			);
 			productName = Scrumdinger;
 			productReference = AAAE801C294793AB0099DABC /* Scrumdinger.app */;
 			productType = "com.apple.product-type.application";
@@ -210,6 +215,9 @@
 				Base,
 			);
 			mainGroup = AAAE8013294793AB0099DABC;
+			packageReferences = (
+				BF939F8E2B2BD16B0034CB36 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = AAAE801D294793AB0099DABC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -461,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF939F8E2B2BD16B0034CB36 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF939F8F2B2BD16B0034CB36 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF939F8E2B2BD16B0034CB36 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAAE8014294793AB0099DABC /* Project object */;
 }
